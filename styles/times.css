@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+body {
+  animation: modalIn 0.6s;
+  background-image: url("../images/freeFire.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: black;
+  color: white;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* 
+
+  content sytle
+
+*/
+
+.bg-yellow {
+  background-color: #ffa31a;
+  padding: 5px 10px;
+}
+
+.bg-yellow-wh {
+  color: #ffa31a;
+  padding: 2px;
+}
+
+#container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+/* 
+
+  Header style
+
+*/
+
+header {
+  text-align: center;
+}
+
+header .timesParticipantes {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+header .timesParticipantes .title {
+  font-size: 3rem;
+}
+
+header .timesParticipantes h3 {
+  font-size: 1.2rem;
+  margin-top: 4rem;
+}
+
+/* 
+
+  Main style
+
+*/
+
+main .infoTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+}
+
+main .infoTime .square {
+  width: 96px;
+  height: 96px;
+  padding: 4px;
+  margin-right: 1.5rem;
+}
+
+main .infoTime .square .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  color: #ffa31a;
+  font-size: 36px;
+}
+
+main .time {
+  height: 96px;
+  padding: 1rem;
+  width: 35rem;
+}
+
+main .time .emailTime {
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+
+main #sectionContainerTimesInfo .titleTime {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  #content {
+    padding: 1rem;
+  }
+
+  main .infoTime {
+    margin-left: 1rem;
+  }
+
+  header .timesParticipantes .title {
+    font-size: 3.4rem;
+    line-height: 80px;
+  }
+
+  header .timesParticipantes h3 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.4rem;
+  }
+
+  main .infoTime .square {
+    margin-right: 0;
+  }
+
+  main .time {
+    width: 25rem;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  main .infoTime {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  main .time {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  main .time .titleTime {
+    margin-bottom: 30px;
+  }
+
+  main .time {
+    width: 20rem;
+  }
+
+}

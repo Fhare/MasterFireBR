@@ -1,0 +1,75 @@
+/* 
+
+  Content right style
+
+*/
+
+main .captureContentRight .subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .contentHeadline h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+main #dataContainer {
+  display: grid;
+  gap: 16px;
+  padding: 24px 40px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#dataContainer .inputContainer {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  border-bottom: 1px solid #ffa41a;
+}
+
+#dataContainer .inputContainer svg {
+  width: 26px;
+  height: 26px;
+}
+
+#dataContainer .inputContainer input {
+  width: 100%;
+  background: none;
+  height: 64px;
+  font-size: 18px;
+  margin-left: 16px;
+  color: #e0e0e0;
+}
+
+#dataContainer .buttonSubscription button {
+  width: 100%;
+  height: 64px;
+  border-radius: 30px;
+  outline: none;
+  background: none;
+  color: #e0e0e0;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 2rem;
+}
+
+#dataContainer .buttonSubscription button a {
+  width: 100%;
+  height: 60px;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+#dataContainer .buttonSubscription button:hover {
+  background-color: #F09918;
+}
+
+#dataContainer .inputContainer input::-webkit-input-placeholder {
+  color: #e0e0e0;
+}
