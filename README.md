@@ -27,7 +27,7 @@ Esse é um sistema simples onde você cadastra um time e mostra todos os times q
    ## Clonar o repositório 
     git clone https://github.com/Fhare/Facebook_clone.git
     
-   ### Para rodar o projeto basta instalar a extensão live server e iniciar um servidor no index.html, ou abrir o index.html a partir de uma pasta.
+   ### -> Para rodar o projeto basta instalar a extensão live server e iniciar um servidor no index.html, ou abrir o index.html a partir de uma pasta.
   
   
   # Autor
